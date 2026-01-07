@@ -28,9 +28,26 @@ public enum Adjustment
     DividendsOnly,
 
     /// <summary>
-    /// Stock splits and dividend adjustments.
+    /// Stock splits and spin-off adjustments.
+    /// </summary>
+    [UsedImplicitly]
+    [EnumMember(Value = "split,spin-off")]
+    SplitsAndSpinOffs,
+
+    /// <summary>
+    /// Stock spin-off adjustments.
+    /// </summary>
+    [UsedImplicitly]
+    [EnumMember(Value = "spin-off")]
+    SpinOffsOnly,
+    
+    /// <summary>
+    /// Stock splits, dividend and spin-off adjustments.
     /// </summary>
     [UsedImplicitly]
     [EnumMember(Value = "all")]
     SplitsAndDividends
+
+
+
 }
